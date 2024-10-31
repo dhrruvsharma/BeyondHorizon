@@ -1,0 +1,59 @@
+.pod{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 1vw;
+    figure{
+        height: 40vh;
+        width: 100%;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .desc-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    p{
+        margin-top: 10px;
+    }
+    max-height: 80vh;
+    overflow-Y: scroll;
+    transition: transform .5s ease-in-out;
+}
+.pod:hover{
+    transform: scale(1.01);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+div.pod::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+div.pod::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+    border-radius: 5px;
+}
+
+div.pod::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 5px;
+}
+h1.round{
+    border: 1px solid red;
+    width: max-content;
+    margin-top: .5vw;
+    padding: 5px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    background-color:#7ded89;
+    color: #e12132;
+    font-size: 1.2rem;
+    text-wrap: wrap;
+    max-width: 95%;
+    line-height: 1rem;
+}

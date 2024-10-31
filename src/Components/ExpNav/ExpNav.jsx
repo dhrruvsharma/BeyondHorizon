@@ -7,7 +7,7 @@ const ExpNav = () => {
         <div className="exp-nav">
             <figure>
                 <img src={Logo} alt="Logo" />
-                <h2>ArtMuseia</h2>
+                <h2>BeyondHorizon</h2>
             </figure>
         </div>
     )
