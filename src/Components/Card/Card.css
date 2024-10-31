@@ -1,0 +1,10 @@
+.card figure img{
+    max-height: 20vw;
+    width: 100%;
+}
+.card figure{
+    width: 100%;
+}
+.card{
+    max-width: 25%;
+}

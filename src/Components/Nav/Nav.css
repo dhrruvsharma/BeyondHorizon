@@ -1,0 +1,23 @@
+.nav figure{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img{
+        height: 5vw;
+        border-radius: 50%;
+        filter: grayscale(100%);
+        animation: rotate 5s linear infinite;
+    }
+}
+.nav{
+    margin-top: 1vh;
+    position: fixed;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

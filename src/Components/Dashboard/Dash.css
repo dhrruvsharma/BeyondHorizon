@@ -1,0 +1,83 @@
+.diagonal{
+    position: relative;
+    color: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.diagonal.revealed{
+    animation: reveal 2s forwards ease-in-out;
+}
+@keyframes reveal{
+    from{
+        clip-path: inset(0% 0% 100% 0)
+    }
+    to{
+        clip-path: inset(0% 0 0 0%);
+    }   
+}
+.main-dash{
+    position: relative;
+}
+.dash-container{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+.nav-container{
+    position: absolute;
+    height: min-content;
+    width: min-content;
+    z-index: 2;
+    top: 0;
+}
+.diagonal h1{
+    font-size: 5rem;
+}
+.diagonal p{
+    font-size: 1.3rem;
+}
+.dashboard-container{
+    background: linear-gradient(#b3b3b3 0%,white 50%);
+    font-size: 5rem;
+    border: none;
+    outline: none;
+}
+.banner{
+    background-image: linear-gradient(45deg,rgba(55,70,66,.75),rgba(8,83,156,.75)),url('https://images.unsplash.com/uploads/14116941824817ba1f28e/78c8dff1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTJ8fHxlbnwwfHx8fHw%3D');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-attachement: fixed;
+    filter:grayscale(10%);
+    h1{
+        color: white;
+        font-size: 5rem;
+    }
+    h2{
+        color: white;
+        font-size: 3rem;
+    }
+}
+.banner h2{
+    --c:black;
+    color: white;
+    background: linear-gradient(90deg,#fff 50%,var(--c) 0) calc(100% - var(--_p,0%))/200% 100%,linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) 100% no-repeat;
+    background-clip: text,padding-box;
+    transition: 0.5s;
+    border-radius: 10px;
+    padding: .2vw;
+}
+.banner h2:hover{
+    --_p: 100%;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}

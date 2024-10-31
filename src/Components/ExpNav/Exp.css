@@ -1,0 +1,36 @@
+.exp-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+.exp-nav figure img{
+    height: 5vw;
+    width: 5vw;
+    border-radius: 50%;
+}
+.exp-nav figure{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+}
+.exp-nav input{
+    font-size: 1.2rem;
+    padding: .3vw;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+.exp-nav button{
+    border-radius: 10px;
+    padding: .2vw;
+    background-color: #2ce4c4;
+    border: none;
+    cursor: pointer;
+}
+.search-form{
+    display: flex;
+    flex-direction: row;
+    gap: .3vw;
+}
