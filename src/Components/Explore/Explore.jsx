@@ -6,12 +6,14 @@ import axios from "axios";
 import POD from "../Card/POD";
 import "./Explore.css"
 import InfScr from "../InfScr/InfScr";
+import { useNavigate } from "react-router-dom";
 
 const Explore = () => {
 
     const baseUrl = import.meta.env.VITE_BASE_URL;
     const key = import.meta.env.VITE_KEY;
     const ImgUrl = import.meta.env.VITE_IMAGES;
+    const navigate = useNavigate();
 
     const [pictures, setPictures] = useState([]);
     const [inf,setInf] = useState([]);
@@ -39,6 +41,10 @@ const Explore = () => {
                 }
             })
             setInf(response.data.collection.items);
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            })
         } catch(error) {
             console.error(error);
         }
@@ -63,7 +69,7 @@ const Explore = () => {
                     <POD date={item.date} description={item.explanation} title={item.title} copyright={item.copyright} url={item.hdurl} key={index} />
                 ))}
             </div>
-            <div className="mars-container" tabIndex={0}>
+            <div className="mars-container" tabIndex={0} onClick={()=>{navigate('/mars')}} role="button">
                 <figure>
                     <img src="https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01306/ids/edr/browse/zcam/ZL0_1306_0782884607_098EBY_N0611394ZCAM09367_1100LMJ02_1200.jpg" alt="Mars" />
                 </figure>
