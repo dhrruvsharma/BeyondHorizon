@@ -6,3 +6,28 @@
 .mars{
     margin: 0 10px;
 }
+.text-wrapper{
+    margin-top: 5px;
+    border: 2px solid black;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+.cards .card-container {
+    border-radius: 20px;
+    transition: all .5s ease-in-out;
+}
+.cards .card-container:nth-child(even) { 
+    background: linear-gradient(60deg,#efe2ba,#d79922);
+}
+.cards .card-container:nth-child(odd) { 
+    background: linear-gradient(60deg,#ac8968,white);
+}
+.cards .card-container:hover{
+    transform: scale(1.01);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.text-wrapper{
+    background: linear-gradient(120deg,#1fa2ff 0%,#12d8fa 50%,#a6ffcb 100%);
+}
