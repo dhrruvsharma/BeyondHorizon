@@ -43,6 +43,7 @@
     h1{
         color:#2f27ce;
     }
+    cursor: pointer;
 }
 .scroll-container{
     display: grid;

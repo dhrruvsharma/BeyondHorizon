@@ -29,6 +29,11 @@ const Mars = () => {
                 }
             })
             setImages((prev) => [...prev, ...response.data.photos]);
+            if (!initial) {
+                window.scrollTo({
+                    top: 0
+                })
+            }
         } catch (error) {
             console.error(error);
         }

@@ -13,6 +13,8 @@
     padding: 1vw;
     height: 65vh;
     transition: all .5s ease-in-out;
+    background-size: cover;
+    background-blend-mode: overlay;
 }
 .camused{
     display: flex;
