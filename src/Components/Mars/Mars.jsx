@@ -70,6 +70,28 @@ const Mars = () => {
 
     }, [images, loader, initial])
 
+    const q = {
+        q: "Black Hole"
+    }
+
+    const get = async () => {
+        try{
+            const response = await axios.get(`https://images-api.nasa.gov/search`,{
+                params: {
+                    "q" : "Black hole",
+                }
+            })
+            console.log(response.data);
+        }
+        catch(error) {
+            console.error(error);
+        }
+    }
+
+    useEffect(() => {
+        get();
+    },[])
+
     return (
         <div className="mars">
             <div className="text-wrapper">
